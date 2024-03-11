@@ -1,5 +1,10 @@
 import React from 'react';
+import Box from '@mui/material/Box';
 
 export default function Dashboard() {
-  return <React.Fragment>Dashboard Data ...</React.Fragment>;
+  return (
+    <Box sx={{ p: 3 }}>
+      <>Dashboard Data ...</>
+    </Box>
+  );
 }
