@@ -1,0 +1,11 @@
+/* styles.css */
+.shared-card {
+  width: 100%; /* Allow card to take full width in flex container */
+  max-width: 300px; /* Use max-width to control the default width */
+}
+
+@media (max-width: 600px) {
+  .shared-card {
+    max-width: 100% !important; /* Allow cards to take full width on small screens */
+  }
+}
