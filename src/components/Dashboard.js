@@ -1,21 +1,35 @@
 import React from 'react';
-import { Container, Grid } from '@mui/material';
-import Card from './Card';
+import { Container } from '@mui/material';
+import TodoCard from './TodoCard';
+import ETCard from './ETCard';
+import CricketCard from './CricketCard';
+import ProfileCard from './ProfileCard';
+import SchedulerCard from './SchedulerCard';
 
 const Dashboard = () => {
   return (
     <Container>
-      <Grid container spacing={3}>
-        <Grid item>
-          <Card title="Carde 1" content="Content of card 1" height={250} width={800} />
-        </Grid>
-        <Grid item>
-          <Card title="Card 2" content="Content of card 2" height={250} width={300} />
-        </Grid>
-        <Grid item>
-          <Card title="Card 3" content="Content of card 3" height={250} width={300} />
-        </Grid>
-      </Grid>
+      <div class="container">
+        <main>
+            <h2>Task Manager</h2>
+            <div class="task-manager">
+              <TodoCard title={'Completed'} count={32} percent={77} cardclass={'sales'} />
+              <TodoCard title={'Todo'} count={43} percent={45} cardclass={'visits'} />
+              <TodoCard title={'Total'} count={28} percent={28} cardclass={'searches'} />
+            </div>
+            <div class="et-wrapper">
+                <ETCard title='Expanse Tracker'/>
+            </div>
+            <div class="cricket-info">
+              <CricketCard title='Cricket Info'/>
+            </div>
+        </main>
+
+        <div class="right-section">
+            <ProfileCard userName='Calvin' userProfile='Fullstack Web Developer' />
+            <SchedulerCard title='Reminders' />
+        </div>
+      </div>
     </Container>
   );
 };
