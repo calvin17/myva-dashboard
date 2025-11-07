@@ -3,7 +3,6 @@
   "installCommand": "npm ci --no-audit --no-fund",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "headers": [
     {
       "source": "/assets/(.*)",
@@ -12,5 +11,12 @@
         { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" }
+  ],
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/.*", "status": 404 }
   ]
 }
