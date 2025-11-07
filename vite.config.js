@@ -23,7 +23,7 @@ export default defineConfig(() => ({
     target: 'esnext',
     minify: false,
     cssCodeSplit: false,
-    modulePreload: false, // MF-friendly
+    modulePreload: false, // MF friendly
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name].js',
