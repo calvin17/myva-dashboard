@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/main.jsx",
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10.9.3 <11"
+  },
+  "packageManager": "npm@10.9.3",
   "scripts": {
     "dev": "vite --mode development",
     "dev:mf": "vite build --watch",
@@ -24,7 +29,7 @@
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.4.1",
-    "@vitejs/plugin-react": "^4.0.0",
-    "vite": "^4.5.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.4"
   }
 }
