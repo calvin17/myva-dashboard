@@ -11,7 +11,7 @@ export default defineConfig(() => ({
       // keep the remote in /assets for both dev and prod
       filename: 'assets/remoteEntry.js',
       exposes: {
-        './DashboardIndex': './src/components/Dashboard.jsx'
+        './DashboardIndex': './src/main.jsx'
       },
       shared: {
         react: { singleton: true },
