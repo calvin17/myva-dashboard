@@ -14,7 +14,6 @@ export default () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-      {/* <Dashboard /> */}
     </div>
   );
 };
