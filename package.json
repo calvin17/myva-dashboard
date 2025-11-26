@@ -9,8 +9,7 @@
   },
   "packageManager": "npm@10.9.3",
   "scripts": {
-    "dev": "vite --mode development",
-    "dev:mf": "vite build --watch",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
