@@ -12,7 +12,7 @@ const Dashboard = () => {
     <Container>
       <div className="container">
         <main>
-            <h2>Task Manager</h2>
+            <h2>Task Manager!</h2>
             <div className="task-manager">
               <TodoCard title={'Completed'} count={32} percent={77} cardclass={'sales'} />
               <TodoCard title={'Todo'} count={43} percent={45} cardclass={'visits'} />
